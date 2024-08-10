@@ -1,8 +1,14 @@
-const Main = () => {
+import * as S from "./styles"
+
+const Main = ({
+  title = 'React Avançado',
+  description = 'Typescript, ReactJS, NextJS e Styled-Components'
+}) => {
   return (
-    <main>
-      <h1>React Avançado</h1>
-    </main>
+    <S.Wrapper>
+      <S.Title>{title}</S.Title>
+      <S.Description>{description}</S.Description>
+    </S.Wrapper>
   )
 }
 
